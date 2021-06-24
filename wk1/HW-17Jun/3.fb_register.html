@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FB Register</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+        }
+        h1, h2, h3, h4, h5, h6, p {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            width: inherit;
+            height: inherit;
+            background-color: #eee;
+        }
+
+        /* fb */
+        .fb-text {
+            display: flex;
+            flex: 0.5;
+            width: inherit;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 10%;
+            margin-right: 5%;
+            margin-bottom: 15%;
+        }
+        .fb-text h1 {
+            font-size: 5rem;
+            color: #1877f2;
+        }
+        .fb-text h3 {
+            font-size: 1.7rem;
+            letter-spacing: 0.1rem;
+        }
+
+        /* login */
+        .login {
+            flex: 0.5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: inherit;
+            height: inherit;
+        }
+        .login-form {
+            display: flex;
+            background-color: white;
+            width: 65%;
+            height: 55%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px 5px #ddd;
+        }
+        .login-form form {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 5px 15px;
+        }
+        .login-form form * {
+            flex: 1;
+            margin: 12px;
+        }
+        .login-form form input {
+            font-size: 1.2rem;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            padding-left: 0.7rem;
+        }
+        .login-form form a {
+            text-decoration: none;
+            margin: 5px;
+        }
+        .login-form form div {
+            display: flex;
+            text-align: center;
+            margin: 0;
+        }
+        .login-form form button:nth-of-type(1) {
+            background-color: #1877f2;
+            color: #fff;
+            font-size: 1.3rem;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-form form button:nth-of-type(2) {
+            background-color: #42b72a;
+            color: #fff;
+            font-size: 1.3rem;
+            align-self: center;
+            width: 50%;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-form form hr {
+            flex: 0;
+            margin: 0;
+        }
+        .login p {
+            margin: 2rem 0;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="fb-text">
+            <div>
+                <h1> facebook</h1>
+            </div>
+            <div>
+                <h3>Facebook ช่วยคุณเชื่อมต่อและแชร์กับผู้คนมากมายรอบตัวคุณ</h3>
+            </div>
+        </div>
+        <div class="login">
+            <div class="login-form">
+                <form action="">
+                    <input type="text" name="" id="" placeholder="อีเมลหรือหมายเลขโทรศัพท์มือถือ">
+                    <input type="password" name="" id="" placeholder="รหัสผ่าน">
+                    <button>เข้าสู่ระบบ</button>
+                    <div><a href="">ลืมรหัสผ่านใช่หรือไม่</a></div>
+                    <hr>
+                    <button>สร้างบัญชีใหม่</button>
+                </form>
+            </div>
+            <p><b>สร้างเพจ</b> สำหรับบุคคลที่มีชื่อเสียง วงดนตรี หรือธุรกิจ</p>
+        </div>
+    </div>
+</body>
+</html>
