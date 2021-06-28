@@ -42,22 +42,23 @@ function isNumber(num) {
 // alert(`sum = ${sum}`);
 // alert(`avg = ${sum / count}`);
 
-// Lab 9.9
-// let player1Num = prompt("player1 input num");
-// let count = 0;
-// while (isNumber(player1Num) && player1Num >= 1 && player1Num <= 99) {
-//     count++;
-//     let player2Num = prompt("player2 guess num");
-//     if (isNumber(player2Num) && +player2Num === +player1Num) {
-//         alert("ถูกต้อง");
-//         alert(`ยินดีด้วยทายถูกแล้ว คุณเล่นทั้งหมด ${count} รอบ`);
-//         break
-//     } else if (isNumber(player2Num) && +player2Num >= +player1Num) {
-//         alert("มากกว่าคำตอบ");
-//     } else if (isNumber(player2Num) && +player2Num <= +player1Num) {
-//         alert("น้อยกว่าคำตอบ");
+// Lab 9.9 
+// let player1Num = prompt("player1 input num (1-99)");
+// if (isNumber(player1Num) && player1Num >= 1 && player1Num <= 99) {
+//     let count = 0;
+//     while (true) {
+//         count++;
+//         let player2Num = prompt("player2 guess num (1-99)");
+//         if (isNumber(player2Num) && player2Num >= 1 && player2Num <= 99) {
+//             if (isNumber(player2Num) && +player2Num === +player1Num) {
+//                 alert("ถูกต้อง");
+//                 alert(`ยินดีด้วยคุณทายถูกภายใน ${count} รอบ`);
+//                 break;
+//             } else if (isNumber(player2Num) && +player2Num > +player1Num) alert("มากกว่าคำตอบ");
+//             else if (isNumber(player2Num) && +player2Num < +player1Num) alert("น้อยกว่าคำตอบ");
+//         } else alert("คุณไม่ได้ใส่ตัวเลข หรือ เลขไม่ได้อยู่ระหว่าง 1-99");
 //     }
-// }
+// } else alert("คุณไม่ได้ใส่ตัวเลข หรือ เลขไม่ได้อยู่ระหว่าง 1-99");
 
 // Lab 9.10
 // for (let i = 1; i <= 100; i++) {
