@@ -31,7 +31,7 @@ function isNumber(num) {
 // login("admin", "P@ssw0rd");
 
 
-// Lab 1.9 ***
+// Lab 1.9 
 // function isPrimeNumber(num) {
 //     let round = 0
 //     for (let i = 1; i <= num; i++) {
@@ -41,18 +41,12 @@ function isNumber(num) {
 //     else return false;
 // }
 // function loopPrime(last) {
-//     for (let i = 1; i <= last; i++) {
-//         let round = 0
-//         for (let j = 1; j <= i; j++) {
-//             if (i % j === 0) round++;
-//         }    
-//         if (round === 2) {
-//             console.log(`จำนวนเฉพาะ = ${i}`);
-//         }
+//     for (let i = 2; i <= last; i++) {
+//        if (isPrimeNumber(i)) console.log(`จำนวนเฉพาะ = ${i}`);
 //     }
 // }
-// const inputNum = prompt("input number for check prime number and loop prime number");
-// alert(`${inputNum} is ${isPrimeNumber(+inputNum)} prime number`);
+// const inputNum = +prompt("input number for check prime number and loop prime number");
+// alert(`${inputNum} is ${isPrimeNumber(inputNum)} prime number`);
 // loopPrime(inputNum);
 
 
