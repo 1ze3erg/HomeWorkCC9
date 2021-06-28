@@ -32,14 +32,15 @@ function isNumber(num) {
 
 // Lab 9.8
 // let sum = 0;
+// let count = 0;
 // while (true) {
 //     let num = +prompt("input num");
-//     if (!num || num < 0) {
-//         break
-//     }
+//     if (!num || num < 0) break;
 //     sum += num;
+//     count++;
 // }
-// console.log(`sum = ${sum}`);
+// alert(`sum = ${sum}`);
+// alert(`avg = ${sum / count}`);
 
 // Lab 9.9
 // let player1Num = prompt("player1 input num");
