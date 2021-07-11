@@ -1,0 +1,6 @@
+function rangeOfNumbers(startNum, endNum) {
+  if (startNum === endNum) return [startNum];
+  let arr = [];
+  arr.push(startNum);
+  return [...arr, ...rangeOfNumbers(startNum + 1, endNum)];
+};
